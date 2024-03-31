@@ -42,16 +42,6 @@ body {
   background-size: cover;
 }
 
-.count {
-  margin-left: auto;
-}
-
-.count p {
-  border: 2px solid var(--white);
-  border-radius: 15px;
-  padding: 0.8rem 1.4rem;
-}
-
 .contain-main {
   margin: 2rem auto;
   max-width: 65%;
