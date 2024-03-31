@@ -1,25 +1,20 @@
-/* Import Font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-/* Reset Css*/
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Variables */
-:root{
+:root {
   --white: #fff;
   --black: #000;
-  --red: rgb(255,88,17);
+  --red: rgb(255, 88, 17);
   --orange: rgb(255, 128, 36);
   --font: "Roboto", sans-serif;
 }
 
-/* ------ */
-
-body{
+body {
   font-family: var(--font);
   font-weight: 700;
   font-style: normal;
@@ -27,81 +22,83 @@ body{
   overflow-x: hidden;
 }
 
-.contain-header{
+.contain-header {
   background: var(--black);
   color: var(--white);
 
-  height: 10vh;
-  width: 100vw;
+  height: 5rem;
+  width: 100%;
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
 
-  padding: 0 5rem;
+  padding: 1rem 5rem;
 }
 
-
-.img-return img{
+.img-return img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-size: cover;
 }
 
-.count{
-  border: 2px solid var(--white);
-  padding: 1.5rem 5rem;
+.count {
+  margin-left: auto;
 }
 
-/* main */
+.count p {
+  border: 2px solid var(--white);
+  border-radius: 15px;
+  padding: 0.8rem 1.4rem;
+}
 
-.contain-main{
+.contain-main {
   margin: 3rem auto;
-  max-width: 50%;
+  max-width: 65%;
 
   font-weight: 900;
   font-style: normal;
 }
 
-.main-texts{
+.main-texts {
   text-align: center;
 }
-.main-texts h2{
+.main-texts h2 {
   color: var(--red);
   font-size: 2.2rem;
   letter-spacing: 7px;
 }
-.main-texts p{
+.main-texts p {
   font-size: 1.5rem;
 }
-.main-texts p span{
+.main-texts p span {
   color: var(--orange);
 }
 .footer-contain-video {
   display: flex;
   justify-content: center;
 }
-.footer-contain-video p{
+.footer-contain-video p {
   position: relative;
   display: inline;
 }
 
-
-.footer-contain-video p::after, .footer-contain-video p::before{
+.footer-contain-video p::after,
+.footer-contain-video p::before {
   content: "";
   display: inline;
   position: absolute;
   width: 1.5rem;
   height: 1.5rem;
-  
-  background: url("../assets/simbolo-de-seta-para-cima-em-um-circulo.png") center;
+
+  background: url("../assets/simbolo-de-seta-para-cima-em-um-circulo.png")
+    center;
   background-size: cover;
 }
-.footer-contain-video p::before{
+.footer-contain-video p::before {
   left: -2rem;
 }
-.footer-contain-video p::after{
+.footer-contain-video p::after {
   right: -2rem;
 }
 
@@ -111,31 +108,28 @@ body{
 }
 
 @media screen and (max-width: 1200px) {
-  .contain-header{
+  .contain-header {
     padding: 0 2rem;
   }
-  /* .footer-contain-video p{
-    left: 10%;
-  }
-  .footer-contain-video p::after{
-    left: 15rem;
-  } */
 
-  .count{
-    padding: 1.2rem 3rem;
-  }
-
-  .contain-main{
+  .contain-main {
     max-width: 80%;
     padding-top: 2rem;
   }
 
-  .main-texts h2{
+  .main-texts h2 {
     font-size: 1.5rem;
   }
 
-  .main-texts p{
-    margin-top: .6rem;
+  .main-texts p {
+    margin-top: 0.6rem;
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contain-main {
+    max-width: 90%;
+    padding-top: 2rem;
   }
 }
