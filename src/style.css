@@ -74,33 +74,6 @@ body {
 .main-texts p span {
   color: var(--orange);
 }
-.footer-contain-video {
-  display: flex;
-  justify-content: center;
-}
-.footer-contain-video p {
-  position: relative;
-  display: inline;
-}
-
-.footer-contain-video p::after,
-.footer-contain-video p::before {
-  content: "";
-  display: inline;
-  position: absolute;
-  width: 1.5rem;
-  height: 1.5rem;
-
-  background: url("../assets/simbolo-de-seta-para-cima-em-um-circulo.png")
-    center;
-  background-size: cover;
-}
-.footer-contain-video p::before {
-  left: -2rem;
-}
-.footer-contain-video p::after {
-  right: -2rem;
-}
 
 .contain__imgs__footer img {
   width: 200px;
